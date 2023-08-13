@@ -5,36 +5,50 @@
     <title>Our Menu</title>
     </title>
     <style>
-      * {
-  box-sizing: border-box;
-}
-h1 {
+ h1 {
   margin-bottom: 15px;
 }
 
 p {
   border: 1px solid black;
+  margin-bottom: 15px;
+}
+#p1 {
   background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+  width: 300px;
+  height: 300px;
+}
+#p2 {
+  background-color: #DEB887;
+  width: 50px;
+  height: 50px;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  #p1 {
+    width: 80%;
+  }
+  #p2 {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 
-.row {
-  width: 100%;
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  #p1 {
+    width: 50%;
+  }
+  #p2 {
+    width: 100px;
+    height: 100px;
+  }
+  body {
+    background-color: blue;
+  }
 }
-     @media (min-width: 992px){
-     }
-      
-     @media (min-width: 768px) and (max-width: 991px){
-     }
-
-      @media (max-width: 767px){
-      }
     </style>
   </head>
   <body>
